@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" src="./updateproduct.component.scss">
+    </head>
+    <body>
+        <h2>Update Product Details</h2>
+        <form (ngSubmit)="f.form.valid && updateProduct()" #f="ngForm" action="" method="post">   
+            <input [(ngModel)]="model.name"  name="desc" type="text" placeholder="Product name" required="required">
+    
+            <input [(ngModel)]="model.desc"  name="desc" type="text" placeholder="Description" required="required">
+    
+            <input [(ngModel)]="model.price"  name="price" type="text" placeholder="Price" required="required">
+            
+            <button type="submit">Update Product</button>
+        </form>
+    </body>
+</html>
+

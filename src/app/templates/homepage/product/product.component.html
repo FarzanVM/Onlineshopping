@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel="stylesheet" src="./product.component.scss">
+    </head>
+    <body>
+        <h1>Product You can Buy</h1>
+        <div class="product" *ngFor="let product of products">
+            <p>Product name:{{product.name}}</p>
+            <p>Description  :{{product.desc}}</p>
+            <p>Price:{{product.price}}Rs</p>
+        </div>
+    </body>
+</html>
+

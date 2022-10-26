@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" src="./homepage.component.scss">
+    </head>
+    <body>
+        <div class="header">
+            Online Shopping App
+        </div>
+        <div class="navbar">
+            <button (click)="allproduct()">Products</button>
+            <button (click)="addProduct()">Add products</button>
+            <button (click)="deleteProduct()">Delete products</button>
+            <button (click)="updateProduct()">Update products</button>
+        </div>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </body>
+</html>

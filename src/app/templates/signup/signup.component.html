@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" src="./signup.component.scss">
+    </head>
+    <body>
+        <div class="header">
+            Online Shopping App
+        </div>
+        <div class="signupForm">
+            <form (ngSubmit)="f.form.valid && signup()" #f="ngForm" method="post">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" [(ngModel)]="model.email" #email="ngModel"   required>
+                <br>
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password"  [(ngModel)]="model.password" #password="ngModel"  required><br>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </body>
+</html>
+
